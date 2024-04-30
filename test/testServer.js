@@ -5,8 +5,7 @@ let coin = {path:'',title:''}
 
 import('chai').then(chai => {
     const expect = chai.expect;
-    describe('GET /api/coins', function() {
-    
+    describe('GET /api/coins', function() {    
         it('should return an array of coins', function(done) {        
             request.get(url, function(error, response, body) {            
                 console.log(arguments);            
